@@ -1,6 +1,6 @@
 export * from "./src/ArmorTaxonomy";
 export * from "./src/Context";
-export * from "./src/Race";
+export * from "./src/RaceType";
 export * from "./src/Role";
 export * from "./src/Skill";
 export * from "./src/System";
