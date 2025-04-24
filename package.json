@@ -1,9 +1,22 @@
 {
   "name": "mod20_types",
-  "private": true,
-  "version": "0.0.1",
-  "type": "module",
-  "scripts": {},
-  "dependencies": {},
-  "devDependencies": {}
+  "version": "0.1.0",
+  "private": false,
+  "license": "MIT",
+  "types": "./index.d.ts",
+  "files": [
+    "index.d.ts",
+    "src/"
+  ],
+  "keywords": [
+    "typescript",
+    "types",
+    "ttrpg",
+    "mod20"
+  ],
+  "exports": {
+    ".": {
+      "types": "./index.d.ts"
+    }
+  }
 }
