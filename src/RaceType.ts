@@ -2,12 +2,35 @@ export interface RaceType {
   id: string;
   name: string;
   slug: string;
-  age?: string;
+  speedWalking?: number;
+  speedFlying?: number;
+  speedSwimming?: number;
+  speedClimbing?: number;
+  speedBurrowing?: number;
+  age?: number;
   size?: string;
-  speed?: number;
   languages?: string;
+  traits?: [
+    {
+      id: string;
+    }
+  ];
   alignment?: {
-    value: string;
+    value?:
+      | "Lawful Good"
+      | "Neutral Good"
+      | "Chaotic Good"
+      | "Lawful Neutral"
+      | "True Neutral"
+      | "Chaotic Neutral"
+      | "Lawful Evil"
+      | "Neutral Evil"
+      | "Chaotic Evil";
+    description?: string;
   };
-  systems: [{ type: string; id: string }];
+  systems: [
+    {
+      id: string;
+    }
+  ];
 }

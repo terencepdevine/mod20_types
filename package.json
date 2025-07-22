@@ -1,9 +1,10 @@
 {
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "name": "@mod20/types",
   "version": "0.1.3",
   "private": false,
   "license": "MIT",
-  "types": "./index.d.ts",
   "files": [
     "index.d.ts",
     "src/"
