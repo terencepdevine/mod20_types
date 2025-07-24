@@ -12,11 +12,4 @@ export interface ImageType {
   };
   uploadedAt: Date;
   tags: string[];
-  // Legacy fields for backward compatibility
-  file?: string;
-  altText?: string;
-  artistName?: string;
-  artistUrl?: string;
-  createdAt?: Date;
-  updatedAt?: Date;
 }
