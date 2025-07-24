@@ -15,5 +15,6 @@ export interface RoleType {
   skills?: [SkillType];
   tools?: [ToolTaxonomyType];
   systems?: [string];
-  photo?: string;
+  images?: Array<{ imageId: string; orderby: number }>;
+  backgroundImageId?: string;
 }
