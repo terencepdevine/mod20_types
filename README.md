@@ -1,19 +1,33 @@
 # MOD20 Types
 
-This repo contains the shared TypeScript types for the MOD20 project — a modular tabletop RPG system built off the D&D 5e OGL.
+Shared TypeScript type definitions for the MOD20 tabletop RPG system.
 
-The types here define the foundation for characters, abilities, items, and core mechanics across the system.
+## Overview
 
-## About MOD20
+This package contains TypeScript interfaces and types that are shared across the MOD20 ecosystem, including the API backend and React frontend applications.
 
-MOD20 is a customizable TTRPG framework. It keeps the structure and feel of 5e but opens things up for more flexibility, homebrew content, and system hacks.
+## Core Types
 
-## What's Included
+- **SystemType** - Game system definitions with abilities, characters, and metadata
+- **RaceType** - Character race definitions with traits, bonuses, and speed modifiers  
+- **RoleType** - Character class/role definitions with abilities and progression
+- **ImageType** - Media library image metadata with system-scoped filtering
+- **AbilityType** - Core ability scores and modifiers
+- **SystemCharacterType** - Character data structures for system management
 
-- Character interfaces and attributes
-- Mechanics like dice, modifiers, and actions
-- System references like classes and backgrounds
-- Common shared utility types
+## Features
 
-License
-Licensed under MIT. Built with reference to the Open Gaming License (OGL) v1.0a.
+- System-scoped data organization
+- Timestamp tracking for created/updated records
+- Media library integration with proper type safety
+- Comprehensive character creation and management types
+
+## Usage
+
+```typescript
+import { SystemType, RaceType, RoleType } from '@mod20/types';
+```
+
+## License
+
+MIT License
