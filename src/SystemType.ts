@@ -22,5 +22,6 @@ export interface SystemType {
   abilities?: [string];
   skills?: [string];
   backgroundImage?: string;
+  backgroundImageId?: string;
   isNew: boolean;
 }

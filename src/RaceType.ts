@@ -15,6 +15,12 @@ export interface RaceType {
       id: string;
     }
   ];
+  abilityScoreBonuses?: [
+    {
+      ability: string;
+      bonus: number;
+    }
+  ];
   alignment?: {
     value?:
       | "Lawful Good"
@@ -28,9 +34,12 @@ export interface RaceType {
       | "Chaotic Evil";
     description?: string;
   };
-  systems: [
-    {
-      id: string;
-    }
-  ];
+  system: {
+    id: string;
+  };
+  images?: Array<{
+    imageId: string;
+    orderby: number;
+  }>;
+  backgroundImageId?: string;
 }
