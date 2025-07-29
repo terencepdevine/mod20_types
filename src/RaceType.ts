@@ -42,4 +42,6 @@ export interface RaceType {
     orderby: number;
   }>;
   backgroundImageId?: string;
+  createdAt?: string;
+  updatedAt?: string;
 }

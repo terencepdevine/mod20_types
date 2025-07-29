@@ -6,6 +6,8 @@ export interface SystemType {
   name: string;
   slug: string;
   version?: string;
+  createdAt?: string;
+  updatedAt?: string;
   // - System Details
   excerpt?: string;
   introduction?: string;

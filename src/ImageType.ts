@@ -12,4 +12,5 @@ export interface ImageType {
   };
   uploadedAt: Date;
   tags: string[];
+  system?: string; // Reference to the System this image belongs to
 }
