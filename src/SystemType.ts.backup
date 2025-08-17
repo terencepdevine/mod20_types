@@ -1,5 +1,4 @@
 import { SystemCharacterType } from "./SystemCharacterType";
-import { MentalTierType } from "./MentalTierType";
 
 export interface SystemType {
   // 1. Introduction
@@ -24,9 +23,4 @@ export interface SystemType {
   skills?: [string];
   backgroundImageId?: string;
   isNew: boolean;
-
-  // Mental/Resilience System (optional)
-  mental?: boolean; // True if system uses Mental/Panic mechanic
-  mentalName?: string; // Name of the stat (e.g., "Sanity", "Grit", "Courage")
-  mentalTiers?: MentalTierType[]; // Mapping of percentage ranges to Conditions
 }
