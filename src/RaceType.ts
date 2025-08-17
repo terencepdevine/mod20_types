@@ -1,7 +1,10 @@
+import { TraitType } from './TraitType';
+
 export interface RaceType {
   id: string;
   name: string;
   slug: string;
+  introduction?: string;
   speedWalking?: number;
   speedFlying?: number;
   speedSwimming?: number;
@@ -10,11 +13,7 @@ export interface RaceType {
   age?: number;
   size?: string;
   languages?: string;
-  traits?: [
-    {
-      id: string;
-    }
-  ];
+  traits?: TraitType[];
   abilityScoreBonuses?: [
     {
       ability: string;
@@ -34,9 +33,7 @@ export interface RaceType {
       | "Chaotic Evil";
     description?: string;
   };
-  system: {
-    id: string;
-  };
+  system: string;
   images?: Array<{
     imageId: string;
     orderby: number;

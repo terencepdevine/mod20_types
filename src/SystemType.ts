@@ -5,13 +5,11 @@ export interface SystemType {
   id: string;
   name: string;
   slug: string;
-  version?: string;
   createdAt?: string;
   updatedAt?: string;
   // - System Details
   excerpt?: string;
   introduction?: string;
-  background_image?: string;
   details_featured_image?: string;
   // - Welcome to MOD20
   // - Using These Docs
@@ -23,7 +21,6 @@ export interface SystemType {
   // 4. Guide
   abilities?: [string];
   skills?: [string];
-  backgroundImage?: string;
   backgroundImageId?: string;
   isNew: boolean;
 }
