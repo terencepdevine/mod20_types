@@ -1,5 +1,5 @@
 import { SystemCharacterType } from "./SystemCharacterType";
-import { MentalTierType } from "./MentalTierType";
+import { MentalConditionType } from "./MentalConditionType";
 
 export interface SystemType {
   // 1. Introduction
@@ -28,5 +28,5 @@ export interface SystemType {
   // Mental/Resilience System (optional)
   mental?: boolean; // True if system uses Mental/Panic mechanic
   mentalName?: string; // Name of the stat (e.g., "Sanity", "Grit", "Courage")
-  mentalTiers?: MentalTierType[]; // Mapping of percentage ranges to Conditions
+  mentalConditions?: MentalConditionType[]; // Mental-specific conditions for this system
 }

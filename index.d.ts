@@ -3,7 +3,7 @@ export * from "./src/ArmorTaxonomyType";
 export * from "./src/ConditionType";
 export * from "./src/ContextType";
 export * from "./src/ImageType";
-export * from "./src/MentalTierType";
+export * from "./src/MentalConditionType";
 export * from "./src/RaceType";
 export * from "./src/RoleType";
 export * from "./src/SkillType";
