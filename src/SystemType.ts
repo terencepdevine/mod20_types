@@ -33,4 +33,6 @@ export interface SystemType {
   // Styling Options
   backgroundColorFamily?: string; // Background color family (e.g., "gray", "slate", "zinc")
   primaryColorFamily?: string; // Primary color family for accents and highlights
+  headerFontFamily?: string; // Header/headline font family (e.g., "rubik", "nunito-sans")
+  bodyFontFamily?: string; // Body text font family (e.g., "rubik", "nunito-sans")
 }
