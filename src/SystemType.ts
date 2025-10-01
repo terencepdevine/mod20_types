@@ -29,6 +29,11 @@ export interface SystemType {
   mental?: boolean; // True if system uses Mental/Panic mechanic
   mentalName?: string; // Name of the stat (e.g., "Sanity", "Grit", "Courage")
   mentalConditions?: MentalConditionType[]; // Mental-specific conditions for this system
+  mentalTiers?: Array<{
+    minPercentage: number;
+    maxPercentage: number;
+    condition: string;
+  }>;
 
   // Styling Options
   backgroundColorFamily?: string; // Background color family (e.g., "gray", "slate", "zinc")
