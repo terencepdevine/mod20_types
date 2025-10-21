@@ -3,6 +3,7 @@ import { WeaponTaxonomyType } from "./WeaponTaxonomyType";
 import { SkillType } from "./SkillType";
 import { ToolTaxonomyType } from "./ToolTaxonomyType";
 import { AbilityType } from "./AbilityType";
+import { DownloadableFileType } from "./DownloadableFileType";
 
 export interface RoleType {
   id: string;
@@ -19,6 +20,7 @@ export interface RoleType {
   system?: string;
   images?: Array<{ imageId: string; orderby: number }>;
   backgroundImageId?: string;
+  characterSheets?: DownloadableFileType[];
   createdAt: Date;
   updatedAt: Date;
 }

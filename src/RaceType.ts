@@ -1,4 +1,5 @@
 import { TraitType } from './TraitType';
+import { DownloadableFileType } from './DownloadableFileType';
 
 export interface RaceType {
   id: string;
@@ -39,6 +40,7 @@ export interface RaceType {
     orderby: number;
   }>;
   backgroundImageId?: string;
+  characterSheets?: DownloadableFileType[];
   createdAt?: string;
   updatedAt?: string;
 }
